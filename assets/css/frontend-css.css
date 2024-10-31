@@ -1,0 +1,238 @@
+
+.dna88_wp_notify_banner p, 
+.dna88_wp_notify_banner{ 
+	display:none; 
+}
+
+.dna88_wp_notify_banner{
+    /*position:fixed;*/
+    position:absolute;
+    height:auto;
+    width:100%;
+    background: #222;
+    padding-top:10px;
+    z-index:99999999;
+    display:block;
+    padding-bottom: 10px;
+}
+
+.dna88_wp_notify_banner.dna88_bottom{
+    position:relative;
+}
+.dna88_wp_notify_banner.dna88_top{
+    position:relative;
+}
+
+.dna88_wp_notify_banner p {
+    color: #fff;
+    text-align:center;
+    z-index:1000;
+    font-size:20px;
+    display:block;
+    margin: 0;
+    padding: 0px 15px;
+}
+
+#dna88_wp_notify_banner_text{
+    
+    margin: 0px 0px;
+    line-height: initial;
+}
+
+.dna88_wp_notify_close_button {
+    position: absolute;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: none;
+    border-radius: 50%;
+    background: #fff;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    line-height: initial;
+}
+.dna88_wp_notify_close_button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.dna88_wp_notify_close_button:before, 
+.dna88_wp_notify_close_button:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 16px;
+  width: 2px;
+  background-color: #333;
+  top: 4px;
+}
+.dna88_wp_notify_close_button:before {
+  transform: rotate(45deg);
+}
+.dna88_wp_notify_close_button:after {
+  transform: rotate(-45deg);
+}
+.dna88_wp_notify_close_button {
+    border: 1px solid #fff;
+}
+
+.dna88_call_action_btn{
+    background: #2ea3f2;
+    padding: 3px 10px;
+    line-height: 22px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    border: none;
+}
+
+
+.dna88_wp_notify_banner .dna88_wp_notify_close_button:before,
+.dna88_wp_notify_banner .dna88_wp_notify_close_button:after {
+    content: "";
+    width: 55%;
+    height: 2px;
+    position: absolute;
+    top: 48%;
+    left: 22%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.dna88_wp_notify_banner .dna88_wp_notify_close_button:after {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.dna88_wp_notify_banner .dna88_wp_notify_close_button:hover:before,
+.dna88_wp_notify_banner .dna88_wp_notify_close_button:hover:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*body{position:relative;}*/
+.dna88_wp_notify_banner.dna88_bottom{ bottom:0; }
+.dna88_wp_notify_banner.dna88_bottom .dna88_wp_notify_close_button { top:-13px;}
+
+.dna88_wp_notify_banner.dna88_top { top:0; }
+.dna88_wp_notify_banner.dna88_top .dna88_wp_notify_close_button { bottom:-10px; }
+
+.dna88_wp_notify_banner.dna88_top .dna88_wp_notify_close_button.dna88_center {
+    bottom: 35%;
+}
+
+
+/* Gradiant Style  */
+.dna88_wp_notify_banner.dna88_gradiant .dna88_wp_notify_close_button.dna88_center {
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dna88_wp_notify_banner.dna88_gradiant {
+    position: relative !important;
+    width: 50%;
+    margin: 0 auto !important;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+}
+
+.dna88_wp_notify_banner.dna88_gradiant {
+    background-color: #4158d0 !important;
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%) !important;
+}
+.dna88_wp_notify_banner.dna88_gradiant .dna88_wp_notify_close_button.dna88_center {
+    right: 15px !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.dna88_wp_notify_banner.dna88_gradiant.dna88_top {
+    top: 0px;
+}
+.dna88_wp_notify_banner.dna88_gradiant.dna88_bottom {
+    bottom: 0px;
+}
+
+.dna88_wp_notify_banner.dna88_gradiant.dna88_bottom .dna88_wp_notify_close_button.dna88_center {
+     top: 0px;
+    bottom: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 667px) {
+    .dna88_wp_notify_banner.dna88_gradiant {
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 667px) {
+    .dna88_wp_notify_banner.dna88_gradiant {
+        width: 90% !important;
+    }
+}
+
+.dna88_wp_notify_banner.dna88_bottom .dna88_wp_notify_close_button.dna88_center {
+    top: 30%;
+}
+
+
+
+.dna88_wp_notify_banner.dna88_top a.dna88_call_action_btn { 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: 0 auto; 
+    display: inline-table; 
+    bottom: -15px; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+} 
+.dna88_wp_notify_banner.dna88_top { padding-bottom: 20px;padding-top: 15px; }
+
+.dna88_wp_notify_banner.dna88_bottom a.dna88_call_action_btn { 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: 0 auto; 
+    display: inline-table; 
+    top: -15px; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+} 
+.dna88_wp_notify_banner.dna88_bottom { padding-top: 20px; }
+
+
+
+.dna88_wp_notify_banner.dna88_top a.dna88_call_action_btn.dna88_button_left,
+.dna88_wp_notify_banner.dna88_bottom a.dna88_call_action_btn.dna88_button_left {
+    margin: 0px 15px;
+}
+
+.dna88_wp_notify_banner.dna88_top a.dna88_call_action_btn.dna88_button_right ,
+.dna88_wp_notify_banner.dna88_bottom a.dna88_call_action_btn.dna88_button_right  {
+    margin: 0px 15px 0px auto;
+}
